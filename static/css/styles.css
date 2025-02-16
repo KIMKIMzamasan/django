@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:aliceblue;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .pic1{
+    display: block;
+    margin: auto 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: yellow;
+}
+.container .pic2{
+    display: block;
+    background-color: rgb(165, 91, 0);
+    margin: auto 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
