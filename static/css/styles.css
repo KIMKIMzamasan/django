@@ -10,7 +10,6 @@ p{
     font-size: 30px;
     margin: auto 1rem;
     text-align: center;
-    background-color:aqua;
     padding: 2rem 2rem;
 }
 
@@ -22,7 +21,7 @@ h1 {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-gap: 5px;
-    padding: 20px;
+    padding: 2rem 2rem;
     background-color:cadetblue;
     margin: auto 1rem;
 }
@@ -96,4 +95,64 @@ h1 {
     display: block;
     align-items: center;
     padding: 2rem 2rem;
+}
+
+.login_page{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    background-color: antiquewhite;
+}
+
+.login_container{
+    display: grid;
+    padding: 2rem 2rem;
+    margin: 10px 20%;
+    border: #333;
+    border-radius: 50px;
+    background-color:azure;
+}
+
+ .username_container{
+    padding: 1rem 1rem;
+    margin: auto 1rem;
+    font-size: 15px;
+}
+
+.username_container input{ 
+    padding: 5px; 
+    border-radius:10px;
+}
+
+.password_container{
+    
+    padding: 1rem 1rem;
+    margin: auto 1rem;
+    font-size: 15px;
+}
+
+.password_container input{ 
+    padding: 5px; 
+    border-radius:10px;
+}
+
+
+.login_page .logo_container{
+    display: block;
+    padding: 2rem 2rem;
+    align-items: center;
+    margin: auto 2rem;
+    background-color: aqua;
+}
+
+.login_container button{
+    padding: 1rem 1rem;
+    margin: auto 8rem;
+    border-radius: 50px;
+}
+
+.login_container button:hover{
+    background-color: rgb(0, 133, 241);
+    color: black;
+
 }

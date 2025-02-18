@@ -7,7 +7,8 @@
     <!-- Load static files -->
     {% load static %}
     <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v={{ now|date:'YmdHis' }}">
+
 </head>
 <body>
     <h1>Welcome to My Django App</h1>
@@ -61,5 +62,31 @@
      <img src="{% static 'images/Czar.png' %}" alt="Czar">
     </div>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus odio porro dolore quasi eaque. Quidem consequuntur dicta quam, amet aliquam, eos in ex corrupti nesciunt nulla odit veritatis, at modi rerum vero ratione asperiores placeat fugiat quod laborum nemo sunt ipsum. Accusamus aliquam, et pariatur consequuntur enim provident nostrum veritatis sequi nobis voluptatibus? Fugit reiciendis nam officia quas, quos rem.</p>
+
+    <div class="login_page">
+
+        <div class="logo_container">
+
+        </div>
+
+        <div class="login_container">
+            <div class="title">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="username_container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="password_container">
+                <label for="password">Password</label>
+                <input type="text" id="passord" name="password" required>
+            </div>
+            <button type="submit" id="submit">Login</button>
+        </div>
+
+    </div>
+
+    
+
 </body>
 </html>
